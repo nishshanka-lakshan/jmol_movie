@@ -1,7 +1,7 @@
 # 🧪 Molden MO Movie Script
 
 A simple **Jmol** automation script for generating **molecular orbital (MO) animation frames** from `.molden` files.  
-This tool is ideal for visualizing orbital evolution from **real-time simulations**, **charge migration studies**, or **time-resolved electronic structure calculations** (e.g., RT-MR-ADC, TDDFT).
+This tool is ideal for visualizing orbital evolution. 
 
 ---
 
