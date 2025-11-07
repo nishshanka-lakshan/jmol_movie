@@ -1,0 +1,72 @@
+# ====== Molden MO Movie ======
+load "path for the molden file"
+
+var OUTDIR = "path for thr output location";
+
+var FIRST = 1;
+var LAST  = 7500;
+var STEP = 10;  # New: Process every 50th MO
+var CUTOFF = 0.03;
+var ALPHA  = 0.25;
+
+background white;
+frank off;
+set antialiasDisplay true;
+set antialiasTranslucent true;
+
+#wireframe off;
+spacefill 23%;
+backbone 0.25;
+
+# Use CPK colors (standard atom colors)
+color atoms cpk;
+#color atoms jmol;
+# color atoms rasmol;    # Rasmol colors
+# color atoms group;     # Color by chemical group
+
+spin off;
+
+set echo top left;
+font echo 16 bold;
+color echo black;
+
+# ====== FORCE MOLECULE TO HORIZONTAL ORIENTATION ======
+# Reset orientation and rotate to horizontal
+reset;
+# Rotate to make molecule horizontal (lie flat)
+rotate y 180;    # Rotate around x-axis to make it horizontal
+
+# Optional: Fine-tune if needed based on your molecule
+rotate x 30;    # Adjust rotation around y-axis if needed
+# rotate z 180;    # Adjust rotation around z-axis if needed
+
+# Alternative horizontal orientation commands:
+# rotate molecular {1 0 0} 90;  # Specific molecular rotation
+# set axisOrientation xHorizontal; # Force x-axis horizontal
+
+# ====== CONTINUE WITH ANIMATION ======
+var W = 1920;
+var H = 1080;
+var frame_count = 1;  # New: Frame counter for sequential numbering
+
+
+for (var i = FIRST; i <= LAST; i = i + STEP) {
+
+  isosurface delete
+  isosurface cutoff @{CUTOFF} MO @i
+  color isosurface blue red
+  isosurface translucent 0.25
+
+
+  # --- Build unique filename including OUTDIR ---
+#  var filename = OUTDIR + "mo_" + i + ".png"
+  var filename = OUTDIR + "mo_" + format("%04d", i) + ".png";
+
+  # --- Write image using that full path ---
+  write image 1920 1080 @filename
+
+
+  delay 0.2
+}
+
+print "All images written to: " + OUTDIR
