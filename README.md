@@ -22,4 +22,6 @@ Open JMOL → Go to File → Script → Open… and select the script and update
 load "path/to/your/file.molden"
 var OUTDIR = "path/to/output/"```
 
-### 2. Configure parameters
+## ⚙️ Configure parameters
+
+Adjust rendering and frame parameters as needed for your script:
