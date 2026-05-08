@@ -15,7 +15,8 @@ This script:
 ## ⚙️ Usage
 
 ### 1. Edit paths
-Open the script in a text editor and set your file paths:
+Open the script in a script editor in JMOL and set your file paths:
+Open JMOL → Go to File → Script → Open… and select the script
 ```jmol
 load "path/to/your/file.molden"
 var OUTDIR = "path/to/output/"
