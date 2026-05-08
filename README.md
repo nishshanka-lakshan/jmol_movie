@@ -21,5 +21,3 @@ Open JMOL → Go to File → Script → Open… and select the script and update
 ```jmol
 load "path/to/your/file.molden"
 var OUTDIR = "path/to/output/"
-
-**Features** – The main functionalities or highlights of the project.
