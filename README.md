@@ -20,3 +20,14 @@ Open JMOL → Go to File → Script → Open… and select the script and update
 ```jmol
 load "path/to/your/file.molden"
 var OUTDIR = "path/to/output/"
+
+## Configure parameters
+
+Adjust rendering and frame parameters as needed:
+
+var FIRST  = 1;       # First frame index
+var LAST   = 7500;    # Last frame index
+var STEP   = 10;      # Process every nth MO
+var CUTOFF = 0.03;    # Isosurface cutoff
+var ALPHA  = 0.25;    # Transparency
+
