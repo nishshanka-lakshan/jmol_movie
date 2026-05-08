@@ -19,6 +19,6 @@ Open the script in a script editor in JMOL and set your file paths:
 Open JMOL → Go to File → Script → Open… and select the script and update your file paths.
 
 
-## ⚙️ Configure parameters
+### 2. Configure parameters
 
 Adjust rendering and frame parameters as needed for your script:
