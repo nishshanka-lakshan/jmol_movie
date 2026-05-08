@@ -15,7 +15,7 @@ This script:
 - Allows easy movie creation with **FFmpeg**
 
 
-## Usage
+## How to use
 
 Open the script in a text editor and set your file paths:
 
