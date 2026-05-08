@@ -44,7 +44,7 @@ var ALPHA  = 0.25;    # Transparency
 ```
 ## Convert frames to a movie
 
-After generating frames, compile them into a video using FFmpeg:
+After generating the frames, compile them into a video using FFmpeg. The output will be in an MP4 file.
 
 Basic version
 ```
