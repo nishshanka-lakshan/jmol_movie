@@ -83,7 +83,7 @@ rotate x 30;
 ## Additional details
 
 ```
-Mo nomes
+Mo nomesh
 Mo fill
 mo translucent 
 mo titleFormat 
