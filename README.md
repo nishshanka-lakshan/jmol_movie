@@ -79,3 +79,13 @@ isosurface translucent 0.25;
 rotate y 180;
 rotate x 30;
 ```
+
+## Additional details
+
+```
+Mo nomes
+Mo fill
+mo translucent 
+mo titleFormat 
+```
+
