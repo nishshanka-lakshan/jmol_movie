@@ -86,6 +86,7 @@ rotate x 30;
 Mo nomesh
 Mo fill
 mo translucent 
-mo titleFormat 
+mo titleFormat ""
+background white
 ```
 
